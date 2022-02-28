@@ -10,7 +10,12 @@ namespace _04_ByteBank {
 
             Console.WriteLine("Saldo: " + conta1.saldo );
 
-            conta1.Sacar(50);
+            bool resultadoSaque = conta1.Sacar(50);
+
+            Console.WriteLine("Saldo: " + conta1.saldo);
+            Console.WriteLine(resultadoSaque);
+
+            conta1.Depositar(500);
 
             Console.WriteLine("Saldo: " + conta1.saldo);
 

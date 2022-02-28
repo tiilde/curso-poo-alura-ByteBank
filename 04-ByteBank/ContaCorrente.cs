@@ -24,5 +24,9 @@ namespace _04_ByteBank
             }
         }
 
+        public void Depositar(double valor) {
+
+            this.saldo += valor;
+        }
     }
 }

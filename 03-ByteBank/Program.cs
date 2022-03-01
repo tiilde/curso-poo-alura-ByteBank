@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace _03_ByteBank {
-    internal class Program {
+    class Program {
         static void Main(string[] args) {
 
             ContaCorrente contaDaGabriela = new ContaCorrente();

@@ -11,6 +11,7 @@ namespace _07_ByteBank {
 
         // titular é um tipo de referência a classe Cliente
         public Cliente Titular { get; set; }
+        public static int TotalDeContasCriadas { get; private set; }
 
         private int _agencia;
         public int Agencia {
@@ -35,6 +36,8 @@ namespace _07_ByteBank {
             
             Agencia = agencia;
             Numero = numero;
+
+            TotalDeContasCriadas++;
         
         }
 
@@ -51,6 +54,8 @@ namespace _07_ByteBank {
             }
         }
 
+
+        // operações da conta 
         // this para acessar um atributo
         public bool Sacar(double valor) {
 

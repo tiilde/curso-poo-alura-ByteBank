@@ -5,12 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using _05_ByteBank;
 
-
-namespace _05_ByteBank {
+namespace _05_ByteBank
+{
     public class ContaCorrente {
 
-        // titular é um tipo de referência a classe Cliente
-        public Cliente titular;
+        public string Cliente titular;
         public int agencia;
         public int numero;
         public double saldo = 100;
@@ -31,17 +30,18 @@ namespace _05_ByteBank {
 
             this.saldo += valor;
         }
-        public bool Transferir(double valor, ContaCorrente contaDestino) {
+        public bool Transferir(double valor, ContaCorrente contaDestino ) {
             if (this.saldo < valor) {
                 return false;
             }
-
+            
             this.saldo -= valor;
             contaDestino.Depositar(valor);
             return true;
+            
 
-
-
+             
         }
+
     }
 }

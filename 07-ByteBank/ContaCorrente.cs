@@ -36,6 +36,7 @@ namespace _07_ByteBank {
             
             Agencia = agencia;
             Numero = numero;
+            
 
             TotalDeContasCriadas++;
         
